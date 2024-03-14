@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourest - Explore the World</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+
+<body id="top">
+  <body style="background-color:lightcyan;">
+  <!-- 
+    - #HEADER
+  -->
+  
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <h1 class="logo">Tourest</h1>
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link" onclick="scrollWin1()">Destinations</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" onclick="scrollWin2()">Tours</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" onclick="scrollWin3()">Articles</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" onclick="scrollWin4()">About us</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" onclick="scrollWin()">Contact Us</a>
+          </li>
+
+        </ul>
+
+       
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <div class="section_hero">
+        <video autoplay loop muted plays-inline class="back-video">
+          <source src="./assets/images/rajasthan1.mp4">
+        </video>
+        <div class="container2">
+
+         
+          <div class="hero-content">
+
+            <p class="section-subtitle">Explore Your Travel</p>
+
+            <h2 class="hero-title">Travel Made Easy <br> Memories Made <span class="span2"></span></h2>
+
+            <p class="hero-text">
+             " Discover destinations beyond your imaginations"
+            </p>
+
+            <div class="btn-group">
+              
+              <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <!-- <img src="img_avat ar2.png" alt="Avatar" class="avatar"> -->
+    </div>
+
+    <div class="contain">
+      <label for="uname"><b>Email Id</b></label>
+      <input type="text" placeholder="Enter Email Id" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" onclick="alert('Login successful')" style="margin-top: 10px;">Login</button>
+      <label>
+        <!-- <input type="checkbox" checked="checked" name="remember"> Remember me -->
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+    </div>
+  </form>
+</div>
+              
+    <div class="signup"><button class="btn btn-primary signupButton" onclick="document.getElementById('id02').style.display='block'">Sign up</button>
+         <div id="id02" class="modal">
+  
+           <form class="modal-content animate" method="post" style="height: 490px;">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <!-- <img src="img_avat ar2.png" alt="Avatar" class="avatar"> -->
+                    </div>
+                
+                    <div class="contain">
+                      <label for="uname"><b>Full Name</b></label>
+                      <input type="text" placeholder="Enter Your Name" name="uname" required>
+
+                      <label for="uname"><b>Email Id</b></label>
+                      <input type="text" placeholder="Enter Email Id" name="uname" required>
+                
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+
+                      <label for="psw"><b>Confirm Password</b></label>
+                      <input type="password" placeholder="Enter Confirm Password" name="psw" required>
+                        
+                      <button type="submit" onclick="alert('signup successful')" class="loginsuc" style="margin-top: 10px;">Signup</button>
+                      <label>
+                        <!-- <input type="checkbox" checked="checked" name="remember"> Remember me -->
+                      </label>
+                    </div>
+                
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                      <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+                    </div>
+                  </form>
+                </div>     
+              </div>
+            </div>
+
+          </div>
+
+          <figure class="hero-banner">
+            <!-- <img src="./assets/images/hero-banner.png" width="686" height="812" loading="lazy" alt="hero banner" -->
+              <!-- class="w-100"> -->
+          </figure>
+
+        </div>
+      </div>
+
+
+
+
+
+      <!-- 
+        - #DESTINATION
+      -->
+
+      <section class="section destination">
+        <div class="container">
+          <br><br><br><br><br>
+          <p class="section-subtitle">Destinations</p>
+
+          <h2 class="h2 section-title">Choose Your Place</h2>
+
+          <ul class="destination-list">
+
+            <li class="w-50">
+              <a href="udaipur.html" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/udaipur.jpg" width="1140" height="1100" loading="lazy"
+                     class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Rajasthan</p>
+
+                  <h3 class="h3 card-title">Udaipur</h3>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="w-50">
+              <a href="jaipur.html" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/jaipur.jpg" width="1140" height="1100" loading="lazy"
+                     class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Rajasthan</p>
+
+                  <h3 class="h3 card-title">Jaipur</h3>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/jaisalmer.webp" width="1110" height="480" loading="lazy"
+                     class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Rajasthan</p>
+
+                  <h3 class="h3 card-title">Jaisalmer</h3>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/bikaner.webp" width="1110" height="480" loading="lazy"
+                     class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Rajasthan</p>
+
+                  <h3 class="h3 card-title">Bikaner</h3>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/mountabu.webp" width="1110" height="480" loading="lazy"
+                     class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Rajasthan</p>
+
+                  <h3 class="h3 card-title">Mount Abu</h3>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+
+
+              </a>
+            </li>
+
+            <li class="w-50">
+              <a href="https://www.tripadvisor.com/Tourism-g304555-Jaipur_Jaipur_District_Rajasthan-Vacations.html" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/ajmer.jpg" width="1140" height="1100" loading="lazy" style="filter: brightness(70%);"
+                     class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Rajasthan</p>
+
+                  <h3 class="h3 card-title">Ajmer</h3>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="w-50">
+              <a href="jaipur.html" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/bhangarh.jpg" width="1140" height="1100" loading="lazy" style="filter: brightness(80%);"
+                     class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Rajasthan</p>
+
+                  <h3 class="h3 card-title">Bhangarh</h3>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/chittorgarh.jpg" width="1110" height="480" loading="lazy" style="filter: brightness(80%);"
+                     class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Rajasthan</p>
+
+                  <h3 class="h3 card-title">Chittorgarh</h3>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/kota.jpg" width="1110" height="480" loading="lazy" style="filter: brightness(80%);"
+                     class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Rajasthan</p>
+
+                  <h3 class="h3 card-title">kota</h3>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/Kumbhalgarh-Fort.jpg" width="1110" height="480" loading="lazy"
+                     class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Rajasthan</p>
+
+                  <h3 class="h3 card-title">Rajsamand</h3>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+                
+
+              </a>
+            </li>
+
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="section popular">
+        <div class="container">
+
+          <p class="section-subtitle">Featured Tours</p>
+
+          <h2 class="h2 section-title">Holidays Packages</h2>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="https://packages.yatra.com/holidays/dom/details.htm?packageId=MPP-1752-34806&destinationId=183914&source=SEO">
+                    <img src="./assets/images/jaisalmer.webp" width="740" height="518" loading="lazy"
+                       class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">7 Nights</time>
+                  </span>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">₹27,429</div>
+                    
+
+                    <div class="card-rating">
+                      <a href="https://packages.yatra.com/holidays/dom/details.htm?packageId=MPP-1752-34806&destinationId=183914&source=SEO">MORE DETAILS</a>
+
+                     
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="https://packages.yatra.com/holidays/dom/details.htm?packageId=MPP-1752-34806&destinationId=183914&source=SEO">Explore Royal Rajasthan With Palaces & Forts</a>
+                  </h3>
+                  <address class="card-location2">Jaipur (2) - Bikaner (1) - Jaisalmer (1) - Jodhpur  -(1) Udaipur (2)</address>
+                  <address class="card-location">Per Person on twin sharing </address>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="https://packages.yatra.com/holidays/dom/details.htm?packageId=MPP-1703-33357&destinationId=183914&source=SEO">
+                    <img src="./assets/images/Lake_Palace.jpg" width="740" height="518" loading="lazy"
+                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">10 Nights</time>
+                  </span>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">₹29,500</div>
+
+                    <div class="card-rating">
+                    <a href="https://packages.yatra.com/holidays/dom/details.htm?packageId=MPP-1703-33357&destinationId=183914&source=SEO">MORE DETAILS</a>
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="https://packages.yatra.com/holidays/dom/details.htm?packageId=MPP-1703-33357&destinationId=183914&source=SEO">10 Night 11 Days Rajasthan Package</a>
+                  </h3>
+                  <address class="card-location2">Jaipur (2) - Pushkar (1) - Udaipur (2) - Mount Abu (1) - Jodhpur (1) -
+                     Jaisalmer (2) - Bikaner (1) </address>
+                  <address class="card-location">Per Person on twin sharing</address>
+
+                </div>
+
+               
+
+              </div>
+              <a href="https://www.yatra.com/holidays"><div class="more">
+                More Packages
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </div>
+            </a>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="https://packages.yatra.com/holidays/dom/details.htm?packageId=MPP-1752-34869&destinationId=458&source=SEO">
+                    <img src="./assets/images/Jaipur_211.jpg" width="740" height="518" loading="lazy"
+                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">6 Nights</time>
+                  </span>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">₹21,905</div>
+
+                    <div class="card-rating">
+                      <a href="https://packages.yatra.com/holidays/dom/details.htm?packageId=MPP-1752-34869&destinationId=458&source=SEO">MORE DETAILS</a>
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="https://packages.yatra.com/holidays/dom/details.htm?packageId=MPP-1752-34869&destinationId=458&source=SEO">Traditional Rajasthan With Glory Of Mewar.</a>
+                  </h3>
+                  <address class="card-location2">Jaipur (2) - Jodhpur (1) - Mount Abu (1) - Udaipur (2) </address>
+                  <address class="card-location">Per Person on twin sharing</address>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="section-subtitle">What we offer</p>
+
+            <h2 class="h2 section-title">Experience the royal heritage of rajasthan with us</h2>
+
+            <p class="about-text">
+              Rajasthan: Where the sands whisper tales of valor, palaces stand as timeless witnesses,
+               and every corner echoes the melody of rich culture and heritage.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="compass"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Tour guide</h3>
+
+                  <p class="about-item-text">
+                    Embark on a exciting journey with our expert guides
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="briefcase"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Friendly Price</h3>
+                   
+                  <p class="about-item-text">
+                    Indulge in opulent comfort at our handpicked selection of Holiday packages.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <i class="fa fa-bed" aria-hidden="true"></i>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Articles</h3>
+
+                  <p class="about-item-text">
+                    Immerse yourself in a world of travel inspiration with our curated articles.
+                  </p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <a href="#" class="btn btn-primary" style="width: 100px;">Explore</a>
+
+          </div>
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="756" height="842" loading="lazy" alt="" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog">
+        <div class="container">
+
+          <p class="section-subtitle">From The Blog Post</p>
+
+          <h2 class="h2 section-title">Latest Articles</h2>
+
+          <div class="article">
+          <a href="https://www.fabhotels.com/blog/places-to-visit-in-udaipur/">  <div class="article_left">
+              
+            <!-- <a href=""><img src="./assets/images/lake-palace-udaipur.webp" alt=""> -->
+              <div class="inside_photo">
+                <h2>Udaipur</h2>
+                <h1>Top 15 places to visit in udaipur (2024): Timings, <br> Entry Fee</h1>
+                <h3>Udaipur, known as the "City of Lakes," is a beautiful city in the Indian state
+                   of Rajasthan, rich in history and culture. One must-visit historical attraction in 
+                   Udaipur is the City Palace.</h3>
+                   
+                  </div>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            
+            
+          </div></a>
+            <div class="article_right">
+
+              <!-- 1st article -->
+             <a href="https://www.insightvacations.com/blog/story-jaipur-pink-city/"><div class="article_two">
+                <div class="jaipur_nahargarh">
+                  <img src="./assets/images/nahargarh.webp" alt="">
+                </div>
+                <div class="jaipur_article">
+                  <h3>Jaipur</h3>
+                  <h1> The story behind Jaipur being <br> called the "Pink City."</h1>
+                </div>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </div>
+            </a>
+            <!-- 2nd article  -->
+             <a href="https://www.nativeplanet.com/travel-guide/the-golden-city-jaisalmer-rajasthan-000684.html"> <div class="article_two"> <div class="jaipur_nahargarh">
+                <img src="./assets/images/jaisalmer.webp" alt="">
+              </div>
+              <div class="jaipur_article">
+                <h3>Jaisalmer</h3>
+                <h1> Why is Jaisalmer known as <br> 'Golden City?  why its structure<br>  so unique?</h1>
+              </div>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+            </a>
+
+            <!-- 3rd article -->
+              <a href="https://www.tourmyindia.com/states/rajasthan/winter-festival-mount-abu.html"><div class="article_two">
+                <div class="jaipur_nahargarh">
+                  <img src="./assets/images/mountabu.webp" alt="">
+                </div>
+                <div class="jaipur_article">
+                  <h3>Mount abu</h3>
+                  <h1> How Does Mount Abu <br> Transform During the Winter <br> Festival?</h1>
+                </div>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </div>
+            </a>
+            <!-- 4th article -->
+             <a href="https://indianculture.gov.in/node/2806377"> <div class="article_two">
+                <div class="jaipur_nahargarh">
+                  <img src="./assets/images/camel.webp" alt="">
+                </div>
+                <div class="jaipur_article">
+                  <h3>Bikaner</h3>
+                  <h1>The Junagarh Fort: A Symbol <br> of the Regal Glory of <br> Bikaner</h1>
+                </div>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </div>
+            </a>
+            </div>
+          </div>
+
+          <!-- <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/popular-1.jpg" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+                  
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      A good traveler has no fixed plans and is not intent on arriving.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-2.jpg" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+                 
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      A good traveler has no fixed plans and is not intent on arriving.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-3.jpg" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+          
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      A good traveler has no fixed plans and is not intent on arriving.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul> -->
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Top destination</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Udaipur</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Jaipur</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Jaisalmer</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">bikaner</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Mount abu</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Categories</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Travel</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Luxuries hotels</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Tour guide</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Holidays packages</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Articles</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Quick links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Tours</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Booking</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contact us</p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="text" required placeholder="Your Name" class="newsletter-input">
+            <input type="email" name="email" required placeholder="Email address" class="newsletter-input">
+            <textarea class="form-control" required rows="9" cols="60" name="comments" id="feedback_comments" placeholder="Message"></textarea>
+        
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <a href="#" class="logo">Tourest</a>
+
+       
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-google"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top aria-label="Go To Top">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
